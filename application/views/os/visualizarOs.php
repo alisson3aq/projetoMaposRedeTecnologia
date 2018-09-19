@@ -39,6 +39,11 @@ $totalProdutos = 0;?>
                         </table>
 
                 
+                    <?php if ($result->idOs != null) {?>
+                    <hr style="margin-top: 0">
+                    <h5>OS nº.: <?php $nOS = str_pad($result->idOs, 4, "0", STR_PAD_LEFT); echo  $nOS; ?> </h5>
+                    <?php }?>
+
                         <table class="table">
                             <tbody>
                                 <tr>
